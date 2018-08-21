@@ -1,4 +1,11 @@
-/* BZERO */
+/* ********************************************** */
+/*                                                */
+/* vc_bzero.c                                     */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+
 
 #include <stdio.h>
 #include <strings.h>

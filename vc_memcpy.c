@@ -1,4 +1,10 @@
-/* MEMCOPY */
+/* ********************************************** */
+/*                                                */
+/* vc_memcpy.c                                    */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
 
 #include <stdio.h>
 #include <string.h>

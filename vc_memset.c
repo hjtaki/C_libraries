@@ -1,4 +1,10 @@
-/* MEMSET */
+/* ********************************************** */
+/*                                                */
+/* vc_memset.c                                    */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
 
 #include <stdio.h>
 #include <string.h>

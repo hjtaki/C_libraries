@@ -1,4 +1,10 @@
-/* MEMMOVE */
+/* ********************************************** */
+/*                                                */
+/* vc_memmove.c                                   */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
