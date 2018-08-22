@@ -1,8 +1,9 @@
-// 11 
+// 11
 
 #include <stdio.h>
 char **vc_strsplit(char const *s, char c)
 {
+
 
     return 'a';
 }

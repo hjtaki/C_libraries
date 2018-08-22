@@ -1,13 +1,5 @@
 //7
-
-#include <unistd.h>
-#include <stdio.h>
-
-char vc_putnbr(int a)
-{
-    printf("%d", a);
-    a = 2 * a;
-}
+#include <stdlib.h>
 
 char *vc_strmap(char const *s, void (*f)(char))
 {
@@ -18,24 +10,16 @@ char *vc_strmap(char const *s, void (*f)(char))
     while (*s++ != '\0')
         len++;
 
-    char *result;
+    int i;
+    i = 0;
 
-    for (int i = 0; i < len; i++)
-    {
-        // result[i] = f(s[i]);
-        result[len] = '\0';
-        return result;
-    }
+    char *fresh;
+    fresh = malloc(sizeof(int) * 4);
 
-    return result;
-}
+    while (i < len)
+        f(s[i]);
 
-int main(int argc, char const *argv[])
-{
-    char input[] = "abc\n";
-    void (*p)(int);
-    p = &vc_putnbr;
-    vc_strmap(input, *p);
-    /* code */
-    return 0;
+    i++;
+
+    return fresh;
 }
