@@ -22,14 +22,13 @@ void vc_bzero(void *s, size_t n)
 
 void *vc_memalloc(size_t size)
 {
-    void *mem;
+    char fresh;
 
     if (size == 0)
         return (NULL);
-    if ((mem = (void *)malloc(size)) == NULL)
-        ;
-    return (NULL);
+    if ((fresh = (void *)malloc(size)) == NULL)
+        return (NULL);
 
-    vc_bzero(mem, size);
-    return (mem);
+    vc_bzero(fresh, size);
+    return (fresh);
 }
