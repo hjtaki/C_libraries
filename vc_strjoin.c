@@ -69,17 +69,17 @@ void *vc_memalloc(size_t size)
 
 char *vc_strjoin(char const *s1, char const *s2)
 {
-    char *str;
+    char *fresh;
     size_t len;
 
     if (s1 == NULL || s2 == NULL)
         return (NULL);
     len = strlen(s1) + strlen(s2) + 1;
-    str = vc_memalloc(len);
-    if (str)
+    fresh = vc_memalloc(len);
+    if (fresh)
     {
-        str = vc_strcat(str, s1);
-        str = vc_strcat(str, s2);
+        fresh = vc_strcat(fresh, s1);
+        fresh = vc_strcat(fresh, s2);
     }
-    return (str);
+    return (fresh);
 }
