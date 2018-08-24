@@ -1,6 +1,6 @@
 /* ************************************************ */
 /*                                                  */
-/* vc_strclr.c                                      */
+/* vc_memcpy.c                                      */
 /*                                                  */
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako   */
 /*                                                  */
