@@ -8,15 +8,12 @@
 #include "libvc.h"
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 =======
 >>>>>>> 25d859227382a2a5a8f8416424b53209389a66ea
-=======
->>>>>>> f6acc42da332f51fc24f168c1acfcadc92e88a35
 static void vc_putnbr(char *a)
 {
     printf("%s", a);
@@ -34,7 +31,6 @@ void vc_striter(char *s, void (*f)(char *))
     }
     return ;
 <<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 
@@ -49,6 +45,3 @@ void vc_striter(char *s, void (*f)(char *))
 =======
 }
 >>>>>>> 25d859227382a2a5a8f8416424b53209389a66ea
-=======
-}
->>>>>>> f6acc42da332f51fc24f168c1acfcadc92e88a35
