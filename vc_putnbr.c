@@ -1,11 +1,12 @@
-/* ********************************************** */
-/*                                                */
-/* vc_putnbr.c                                    */
-/*                                                */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
-/*                                                */
-/* ********************************************** */
-#include "libvc.h"
+/* ************************************ */
+/*                                      */
+/* vc_putnbr.c                          */
+/*                                      */
+/* By: Alex, Gaida, Chin, Sue, Yukako   */
+/*                                      */
+/* ************************************ */
+#include <stdio.h>
+#include <unistd.h>
 
 void vc_putnbr(int *n)
 {

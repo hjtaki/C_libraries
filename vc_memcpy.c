@@ -8,13 +8,12 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stddef.h>
 
-void *vc_memcpy(void *dest, const void *src, size_t n)
+void vc_memcpy(void *dest, void *src, size_t n)
 {
-	char *dp = dest;
-	const char *sp = src;
-	while (n--)
-		*dp++ = *sp++;
-	return dest;
+	char *csrc = (char *)src;
+	char *cdest = (char *)dest;
+
+	for (int i = 0; i < n; i++)
+		cdest[i] = csrc[i];
 }

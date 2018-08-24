@@ -1,11 +1,10 @@
-/* ********************************************** */
-/*                                                */
-/* vc_strncat.c                                   */
-/*                                                */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
-/*                                                */
-/* ********************************************** */
-#include "libvc.h"
+/**
+ * File              : vc_strncat.c
+ * Author            : Derrick Park
+ * Date              : Fri 10 Aug 12:59:25 2018
+ * Last Modified Date: Fri 10 Aug 12:59:25 2018
+ * Last Modified By  : Derrick Park
+ */
 
 char *vc_strncat(char *dest, char *src, int n)
 {

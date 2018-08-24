@@ -1,11 +1,13 @@
-/* ********************************************** */
-/*                                          	  */
-/* vc_strclr.c                                    */
-/*                                                */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
-/*                                                */
-/* ********************************************** */
-#include "libvc.h"
+/* ************************************ */
+/*                                      */
+/* vc_strclr.c                          */
+/*                                      */
+/* By: Alex, Gaida, Chin, Sue, Yukako   */
+/*                                      */
+/* ************************************ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
 
 void vc_strclr(char *s)
 {

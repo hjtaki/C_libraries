@@ -1,16 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
-static char *vc_strrchr(const char *s, int c)
+char *vc_strrchr(const char *s, int c)
 {
-    const char *ret = NULL;
-
+    char *ret = 0;
     do
     {
-        if (*s == c)
-        {
+        if (*s == (char)c)
             ret = s;
-        }
     } while (*s++);
-    return (char *)ret;
+    return ret;
 }

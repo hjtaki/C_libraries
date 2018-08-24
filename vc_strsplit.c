@@ -1,13 +1,6 @@
 // 11
-/* ********************************************** */
-/*                                                */
-/* vc_strsplit.c                                  */
-/*                                                */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
-/*                                                */
-/* ********************************************** */
-#include "libvc.h"
 
+#include <stdio.h>
 char **vc_strsplit(char const *s, char c)
 {
 

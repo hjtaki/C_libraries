@@ -1,45 +1,46 @@
-/* ********************************************** */
-/*                                                */
+/*                                          	  */
 /* vc_itoa.c                                      */
 /*                                                */
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-#include "libvc.h"
 
-static long int vc_abs(long int n)
+#include <stdlib.h>
+#include <stdio.h>
+
+static long int vc_abs(long int nbr)
 {
-    return ((n < 0) ? -n : n);
+    return ((nbr < 0) ? -nbr : nbr);
 }
 
-static int vc_len(long int n)
+static int vc_len(long int nbr)
 {
     int len;
 
-    len = (n <= 0) ? 1 : 0;
-    while (n != 0)
+    len = (nbr <= 0) ? 1 : 0;
+    while (nbr != 0)
     {
-        n = n / 10;
+        nbr = nbr / 10;
         len++;
     }
     return (len);
 }
 
-char *vc_itoa(int n)
+char *vc_itoa(int nbr)
 {
     int len;
     int sign;
     char *c;
 
-    sign = (n < 0) ? -1 : 1;
-    len = vc_len(n);
+    sign = (nbr < 0) ? -1 : 1;
+    len = vc_len(nbr);
     c = (char *)malloc(sizeof(char) * len + 1);
     c[len] = '\0';
     len--;
     while (len >= 0)
     {
-        c[len] = '0' + vc_abs(n % 10);
-        n = vc_abs(n / 10);
+        c[len] = '0' + vc_abs(nbr % 10);
+        nbr = vc_abs(nbr / 10);
         len--;
     }
     if (sign == -1)

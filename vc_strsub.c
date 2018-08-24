@@ -1,11 +1,11 @@
-/* ********************************************** */
 /*                                          	  */
 /* vc_strsub.c                                    */
 /*                                                */
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-#include "libvc.h"
+#include "stdio.h"
+#include "stdlib.h"
 
 char *vc_strsub(char const *s, unsigned int start, size_t len)
 {

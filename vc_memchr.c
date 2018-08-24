@@ -6,14 +6,42 @@
 /*                                                */
 /* ********************************************** */
 
-#include <stddef.h>
-void *vc_memchr(const void *s, int c, size_t n)
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+void *vc_memchr(const void *buffer, int ch, size_t count)
 {
-    unsigned char *p = (unsigned char *)s;
-    while (n--)
-        if (*p != (unsigned char)c)
-            p++;
+    int i;
+    char c;
+    char *s = buffer;
+
+    for (i = 0; i < count; i++)
+    {
+        if (*s == ch)
+        {
+
+            return s;
+        }
         else
-            return p;
-    return 0;
+            s++;
+    }
 }
+
+/* MEMCHR */
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+void *vc_memchr(const void *buffer, int ch, size_t count)
+{
+    int i;
+    char c;
+    char *s = buffer;
+
+    for (i = 0; i < count; i++)
+    {
+        if (*s == ch)
+        {
+

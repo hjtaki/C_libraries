@@ -1,11 +1,7 @@
-/* ********************************************** */
-/*                                                */
-/* vc_strnew.c                                    */
-/*                                                */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
-/*                                                */
-/* ********************************************** */
-#include "libvc.h"
+// 3 ok
+#include <stdlib.h>
+
+// Outputs the string s to the standard output followed by '\n'
 
 char *vc_strnew(size_t size)
 {
@@ -31,4 +27,11 @@ char *vc_strnew(size_t size)
         return str;
     }
     return NULL;
+}
+
+int main(int argc, char const *argv[])
+{
+    vc_strnew(2);
+    /* code */
+    return 0;
 }

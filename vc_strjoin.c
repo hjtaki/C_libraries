@@ -1,13 +1,16 @@
-/* ********************************************** */
-/*                                                */
-/* vc_strjoin.c                                   */
-/*                                                */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
-/*                                                */
-/* ********************************************** */
-#include "libvc.h"
+/* ************************************************ */
+/*                                                  */
+/* vc_strclr.c                                      */
+/*                                                  */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako   */
+/*                                                  */
+/* ************************************************ */
+#include <stdlib.h>
+#include <stdio.h>
+#include <strings.h>
+#include <unistd.h>
 
-static char *vc_checkchar(const char *s, int c)
+char *vc_checkchar(const char *s, int c)
 {
     if (s == NULL)
         return (NULL);
@@ -20,7 +23,7 @@ static char *vc_checkchar(const char *s, int c)
     return ((char *)s);
 }
 
-static char *vc_strcpy(char *dst, char *src)
+char *vc_strcpy(char *dst, char *src)
 {
     int i;
     i = 0;
@@ -33,13 +36,13 @@ static char *vc_strcpy(char *dst, char *src)
     return (dst);
 }
 
-static char *vc_strcat(char *dest, char *src)
+char *vc_strcat(char *s1, const char *s2)
 {
-    vc_copy(vc_checkchar(dest, '\0'), src);
-    return (dest);
+    vc_copy(vc_checkchar(s1, '\0'), s2);
+    return (s1);
 }
 
-static void vc_bzero(void *s, size_t n)
+void vc_bzero(void *s, size_t n)
 {
     char *c = s;
     size_t i;
@@ -50,7 +53,7 @@ static void vc_bzero(void *s, size_t n)
     }
 }
 
-static void *vc_memalloc(size_t size)
+void *vc_memalloc(size_t size)
 {
     void *mem;
 
