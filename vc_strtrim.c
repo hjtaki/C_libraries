@@ -19,9 +19,12 @@ static int len(char const *str)
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 int begin_space(char const *arr){
     int counter = 0;
 =======
+=======
+>>>>>>> f6acc42da332f51fc24f168c1acfcadc92e88a35
 static int begin_space(char const *arr)
 {
     int counter;
@@ -39,9 +42,12 @@ static int begin_space(char const *arr)
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 int end_space(char const *arr){
     int counter = 0;
 =======
+=======
+>>>>>>> f6acc42da332f51fc24f168c1acfcadc92e88a35
 static int end_space(char const *arr)
 {
     int counter;
@@ -85,6 +91,7 @@ char *vc_strtrim(char const *s)
 
     return arr;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 // int main(int argc, char const *argv[])
@@ -107,3 +114,6 @@ char *vc_strtrim(char const *s)
 =======
 }
 >>>>>>> 25d859227382a2a5a8f8416424b53209389a66ea
+=======
+}
+>>>>>>> f6acc42da332f51fc24f168c1acfcadc92e88a35
