@@ -1,40 +1,29 @@
-/* ************************************ */
-/*                                      */
-/* vc_strstr.c                          */
-/*                                      */
-/* By: Marcelo, Chin, Giada             */
-/*                                      */
-/* ************************************ */
-
-#include <stdio.h>
+/* ********************************************** */
+/*                                                */
+/* vc_strstr.c                                    */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+#include "libvc.h"
 
 char *vc_strstr(char *str, char *to_find)
 {
-    while (*str) 
-	  {
-		    char *Begin = str;
-		    char *pattern = to_find;
-		    
-		    
-		    while (*str && *pattern && *str == *pattern) 
-			{
-			      str++;
-			      pattern++;
-		    }
-		     
-		    if (!*pattern)
-		    	  return Begin;
-		    	  
-		    str = Begin + 1;	 
-	  }
-	  return NULL;
-}
+  int i;
+  int j;
 
-int main()
-{
-	char s1 [] = "This is www.firmcodes.com";
-   
-    printf ("Returned String 1: %s\n", vc_strstr(s1, "firmcodes"));
- 
-	return 0;
+  i = 0;
+  j = 0;
+  if (!to_find[0])
+    return &str[i];
+  while (str[i])
+  {
+    while ((str[i + j] == to_find[j]) && to_find[j])
+      j++;
+    if (!to_find[j])
+      return &(str[i]);
+    j = 0;
+    i++;
+  }
+  return NULL;
 }

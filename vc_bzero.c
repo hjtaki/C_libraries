@@ -6,11 +6,10 @@
 /*                                                */
 /* ********************************************** */
 
-
 #include <stdio.h>
 #include <strings.h>
 
-void vc_bzero(void *s, size_t n)
+static void vc_bzero(void *s, size_t n)
 {
     char *c = s;
     size_t i;

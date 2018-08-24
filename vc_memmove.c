@@ -5,10 +5,7 @@
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "libvc.h"
 
 void *vc_memmove(void *dest, void *source, size_t num)
 {

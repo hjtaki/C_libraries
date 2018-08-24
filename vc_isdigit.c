@@ -1,6 +1,11 @@
-#include <stdio.h>
-#include <time.h>
-#include <ctype.h>
+/* ********************************************** */
+/*                                                */
+/* vc_isdigit.c                                   */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+#include "libvc.h"
 
 int vc_isdigit(int c)
 {

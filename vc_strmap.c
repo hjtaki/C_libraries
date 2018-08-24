@@ -1,9 +1,14 @@
-//7
-#include <stdlib.h>
+/* ********************************************** */
+/*                                          	  */
+/* vc_strmap.c                                    */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+#include "libvc.h"
 
 char *vc_strmap(char const *s, void (*f)(char))
 {
-
     int len;
 
     len = 0;

@@ -1,21 +1,13 @@
-/*                                          	  */
-/* vc_strdel.c                                    */
+/* ********************************************** */
+/*                                                */
+/* vc_putchar.c                                   */
 /*                                                */
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-
-#include <stdio.h>
-#include <unistd.h>
+#include "libvc.h"
 
 void vc_putchar(char c)
 {
   write(1, &c, 1);
-}
-
-
-int main(int argc, char const *argv[])
-{
-    vc_putchar('s');
-    return 0;
 }
