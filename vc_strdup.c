@@ -1,42 +1,25 @@
-/* ************************************ */
-/*                                      */
-/* vc_strlen.c.c                        */
-/*                                      */
-/* By: Chin, Giada, Rey                 */
-/*                                      */
-/* ************************************ */
+/* ********************************************** */
+/*                                                */
+/* vc_strdup.c                                    */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+#include "libvc.h"
 
-#include <stdlib.h>
-#include <string.h>
-
-char *vc_strlen(char *src)
+char *vc_strdup(char *src)
 {
-  char *str;
-  char *p;
-  size_t len = strlen(src);
+    char *dst;
+    int i;
 
-  str = malloc(len + 1);
-  if (str)
-  {
-    memcpy(str, src, len + 1);
-  }
-  return str;
-}
-
-int main()
-{
-  char original[12] = "Ooga Booga!";
-  char *duplicate;
-  int o_len, d_len;
-
-  duplicate = vc_strlen(original);
-  o_len = strlen(original);
-  d_len = strlen(duplicate);
-
-  printf("Original String: '%s' (%d)\n",
-         original, o_len);
-  printf("Duplicate string: '%s' (%d)\n",
-         duplicate, d_len);
-
-  return (0);
+    i = 0;
+    while (src[i])
+        i++;
+    if (!(dst = (char *)malloc(sizeof(char) * (i + 1))))
+        return NULL;
+    i = -1;
+    while (src[++i])
+        dst[i] = src[i];
+    dst[i] = '\0';
+    return dst;
 }

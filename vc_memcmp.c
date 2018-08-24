@@ -1,10 +1,11 @@
-/*                                          	  */
+/* ********************************************** */
+/*                                                */
 /* vc_memcmp.c                                    */
 /*                                                */
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-#include <stdio.h>
+#include "libvc.h"
 
 int vc_memcmp(const char *s1, const char *s2, size_t n)
 {
