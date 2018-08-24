@@ -5,10 +5,7 @@
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "libvc.h"
 
 void vc_memset(void *ptr, int value, int size)
 {

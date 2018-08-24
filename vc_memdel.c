@@ -1,17 +1,14 @@
-/*                                          	  */
-/* vc_strdel.c                                    */
+/* ********************************************** */
+/*                                                */
+/* vc_memdel.c                                    */
 /*                                                */
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-
-#include <stdio.h>
-#include <stdlib.h>
+#include "libvc.h"
 
 void vc_memdel(void **ap)
 {
     free(*ap);
     *ap = NULL;
-	
 }
-

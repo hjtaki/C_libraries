@@ -1,11 +1,11 @@
+/* ********************************************** */
 /*                                          	  */
 /* vc_strdel.c                                    */
 /*                                                */
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-#include <stdio.h>
-#include <stdlib.h>
+#include "libvc.h"
 
 void vc_strdel(char **as)
 {
