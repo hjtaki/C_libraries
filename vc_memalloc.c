@@ -8,27 +8,22 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-void vc_bzero(void *s, size_t n)
-{
-    char *c = s;
-    size_t i;
-
-    for (i = 0; i < n; ++i)
-    {
-        c[i] = '\0';
-    }
-}
+#include <unistd.h>
 
 void *vc_memalloc(size_t size)
 {
-    char fresh;
+    void *fresh = "fresh";
 
     if (size == 0)
         return (NULL);
-    if ((fresh = (void *)malloc(size)) == NULL)
-        return (NULL);
+    if ((fresh == (void *)malloc(size)) == NULL)
+    {
+        return (fresh);
+    }
+}
 
-    vc_bzero(fresh, size);
-    return (fresh);
+int main()
+{
+    int size = 50;
+    vc_memalloc(size);
 }
