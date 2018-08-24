@@ -1,19 +1,16 @@
-/* ********************************************** */
-/*                                                */
-/* vc_strrchr.c                                   */
-/*                                                */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
-/*                                                */
-/* ********************************************** */
-#include "libvc.h"
+#include <stdio.h>
+#include <string.h>
 
-char *vc_strrchr(const char *s, int c)
+static char *vc_strrchr(const char *s, int c)
 {
-    char *ret = 0;
+    const char *ret = NULL;
+
     do
     {
-        if (*s == (char)c)
+        if (*s == c)
+        {
             ret = s;
+        }
     } while (*s++);
-    return ret;
+    return (char *)ret;
 }

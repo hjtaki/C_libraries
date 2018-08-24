@@ -1,20 +1,35 @@
-/* ********************************************** */
-/*                                                */
-/* vc_strcpy.c                                    */
-/*                                                */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
-/*                                                */
-/* ********************************************** */
-#include "libvc.h"
+/* ************************************ */
+/*                                      */
+/* vc_strcpy.c                          */
+/*                                      */
+/* By: Marcelo, Chin, Giada             */
+/*                                      */
+/* ************************************ */
 
-char *vc_strcpy(char *dst, char *src)
+#include <stdio.h>
+
+static char *vc_strcpy(char *dst, char *src)
 {
     int i;
     i = 0;
-    while (src[i] != '\0') 
+    while (src[i] != '\0')
     {
         dst[i] = src[i];
         i++;
     }
-return dst;
+    return dst;
+}
+
+int main()
+{
+    char src[100], dest[100], i;
+    printf("Enter string Src: ");
+    scanf("%s", src);
+    for (i = 0; src[i] != '\0'; ++i)
+    {
+        dest[i] = src[i];
+    }
+    dest[i] = '\0';
+    printf("String Dest: %s", dest);
+    return 0;
 }

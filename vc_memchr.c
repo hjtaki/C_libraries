@@ -5,22 +5,15 @@
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-#include "libvc.h"
 
-void *vc_memchr(const void *buffer, int ch, size_t count)
+#include <stddef.h>
+void *vc_memchr(const void *s, int c, size_t n)
 {
-    int i;
-    char c;
-    char *s = buffer;
-
-    for (i = 0; i < count; i++)
-    {
-        if (*s == ch)
-        {
-
-            return s;
-        }
+    unsigned char *p = (unsigned char *)s;
+    while (n--)
+        if (*p != (unsigned char)c)
+            p++;
         else
-            s++;
-    }
+            return p;
+    return 0;
 }
