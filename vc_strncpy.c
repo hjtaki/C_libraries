@@ -1,12 +1,12 @@
-/* ************************************ */
-/*                                      */
-/* vc_strncpy.c                         */
-/*                                      */
-/* By: Marcelo, Chin, Giada             */
-/*                                      */
-/* ************************************ */
+/* ********************************************** */
+/*                                                */
+/* vc_strncpy.c                                   */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+#include "libvc.h"
 
-#include <stdio.h>
 char *vc_strncpy(char *dest, char *src, unsigned int n)
 {
     size_t i;

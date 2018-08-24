@@ -1,5 +1,12 @@
 //14 ok
-#include <unistd.h>
+/* ********************************************** */
+/*                                                */
+/* vc_putendl.c                                   */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+#include "libvc.h"
 
 void vc_putendl(char *s)
 {

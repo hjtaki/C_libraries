@@ -1,15 +1,13 @@
-/* ************************************************ */
-/*                                                  */
-/* vc_strclr.c                                      */
-/*                                                  */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako   */
-/*                                                  */
-/* ************************************************ */
+/* ********************************************** */
+/*                                                */
+/* vc_memalloc.c                                  */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+#include "libvc.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-
-void vc_bzero(void *s, size_t n)
+static void vc_bzero(void *s, size_t n)
 {
     char *c = s;
     size_t i;

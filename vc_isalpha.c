@@ -1,12 +1,13 @@
-/**
- * File              : vc_str_is_alpha.c
- * Author            : Derrick Park
- * Date              : Fri 10 Aug 12:17:46 2018
- * Last Modified Date: Fri 10 Aug 12:17:46 2018
- * Last Modified By  : Derrick Park
- */
+/* ********************************************** */
+/*                                                */
+/* vc_isalpha.c                                   */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+#include "libvc.h"
 
-int vc_str_is_alpha(char *str)
+int vc_isalpha(char *str)
 {
   int i;
 

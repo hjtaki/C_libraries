@@ -1,5 +1,11 @@
-#include <stdio.h>
-#include <string.h>
+/* ********************************************** */
+/*                                                */
+/* vc_strrchr.c                                   */
+/*                                                */
+/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
+/*                                                */
+/* ********************************************** */
+#include "libvc.h"
 
 char *vc_strrchr(const char *s, int c)
 {

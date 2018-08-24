@@ -5,9 +5,7 @@
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-
-#include <stdio.h>
-#include <string.h>
+#include "libvc.h"
 
 void vc_memcpy(void *dest, void *src, size_t n)
 {

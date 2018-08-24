@@ -5,10 +5,7 @@
 /* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
 /*                                                */
 /* ********************************************** */
-
-
-#include <stdio.h>
-#include <strings.h>
+#include "libvc.h"
 
 void vc_bzero(void *s, size_t n)
 {
