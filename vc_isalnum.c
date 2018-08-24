@@ -1,11 +1,6 @@
-/* ********************************************** */
-/*                                                */
-/* vc_isalnum.c                                   */
-/*                                                */
-/* By: Team D - Alex, Chin, Giada, Suelen, Yukako */
-/*                                                */
-/* ********************************************** */
-#include "libvc.h"
+#include <stdio.h>
+#include <time.h>
+#include <ctype.h>
 
 int vc_isalnum(int c)
 {

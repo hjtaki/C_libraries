@@ -1,18 +1,24 @@
 /* ************************************ */
 /*                                      */
-/*   vc_strlcat.c                       */
+/* vc_str_is_alpha.c                    */
 /*                                      */
 /* By: Chin, Giada, Rey                 */
 /*                                      */
 /* ************************************ */
 
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
-unsigned int vc_strlcat(char *dest, char *src, unsigned int size)
+int vc_str_is_alpha(char *str)
 {
-}
-
-int main()
-{
-    return 0;
+    int i;
+    for (i = 0; i < strlen(str); ++i)
+    {
+        if (isdigit(str[i]) && str[i] != '\0')
+        {
+            return 0;
+        }
+    }
+    return 1;
 }
